@@ -91,39 +91,61 @@ Why geocoding? Selecting a suggestion gives precise lat/lon, removing ambiguity 
 Design notes
 
 Modern glassmorphism, gradient backgrounds, and iconography
+
 Heart‑based favorites for an approachable, premium feel
+
 One‑tap actions with subtle haptics (when available)
+
 Dynamic type friendly and Dark Mode‑compatible
+
 AsyncImage loads OpenWeather icons when provided
 
 
 Persistence
+
 FavoriteCityStore stores up to 3 favorites in UserDefaults (JSON‑encoded)
+
 Favorites prefer saving coordinates (from suggestions) for accurate retrieval
+
 Duplicate detection by coordinates or normalized text
 
 
 Error handling
+
 Typed HTTPError for network/decoding/server errors
+
 User‑friendly messages (e.g., “City not found…”)
+
 SwiftUI alert surfaced from HomeViewModel
+
 DEBUG logging prints requests and pretty JSON responses
 
 App Icon
+
 Included under Assets.xcassets/AppIcon
+
 For Xcode 15+, a single 1024×1024 PNG is sufficient
+
 Optional script (scripts/generate-app-icons.sh) can produce a full multi‑size set and Contents.json from one 1024×1024 input
 
 Troubleshooting
+
 401 Invalid API key: Wait up to ~10 minutes after creating your key, or verify the value.
+
 404 city not found: Use suggestions or include country code (e.g., “Sydney, AU”).
+
 No icons appear: Some responses may omit an icon; AsyncImage shows a placeholder in that case.
+
 Navigation doesn’t occur after tapping a suggestion: Ensure HomeView calls viewModel.fetchWeather(for: suggestion) and pushes Details on success.
+
 Roadmap (nice-to-have improvements)
 
 OpenWeather for the weather and geocoding APIs
+
 SF Symbols for high‑quality system icons
 
 The project demonstrates MVVM + Coordinator , with protocol‑driven services and SOLID boundaries.
+
 Geocoding suggestions are debounced and in‑flight canceled to respect rate limits and ensure a responsive UI.
+
 Favorites support up to three entries and use coordinates when available for exact weather retrieval.
