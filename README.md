@@ -5,9 +5,25 @@
 <img width="442" height="939" alt="Screenshot 2025-08-29 at 01 41 42" src="https://github.com/user-attachments/assets/8c458597-3fa2-4328-9072-526e48254874" />
 <img width="442" height="939" alt="Screenshot 2025-08-29 at 01 41 32" src="https://github.com/user-attachments/assets/3fb488d1-8e4a-482c-a1c2-934b7443d520" />
 <img width="442" height="939" alt="Screenshot 2025-08-29 at 01 41 25" src="https://github.com/user-attachments/assets/38101185-7209-4b4b-ae80-25b93d303d4b" />
-<img width<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 43 27" src="https://github.com/user-attachments/assets/ad7f9afe-a905-4466-a6f9-b1b6dc8fb0f9" />
-="442" height="939" alt="Screenshot 2025-08-29 at 01 41 18" src="https://github.com/user-attachments/assets/40eb888a-2efd-437b-8bf4-7aaf117962da" />
+<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 43 27" src="https://github.com/user-attachments/assets/ad7f9afe-a905-4466-a6f9-b1b6dc8fb0f9" />
 <img width="442" height="939" alt="Screenshot 2025-08-29 at 01 44 10" src="https://github.com/user-attachments/assets/dd206652-8f8e-48bd-8132-74893ad0f361" />
+
+
+
+https://github.com/user-attachments/assets/d667759f-e61d-4171-88f1-e81fb3d6ddb8
+
+
+https://github.com/user-attachments/assets/2085d15d-ca11-42a2-b42e-5f04373b62af
+
+
+https://github.com/user-attachments/assets/639ceaf8-d570-431c-90bc-3c9ba7064f56
+
+
+
+https://github.com/user-attachments/assets/24780d5b-0daf-44f5-8eb5-f44eb6950a37
+
+
+
 
 Weatherly (iOS · SwiftUI)
 
