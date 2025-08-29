@@ -64,10 +64,13 @@ API notes
 
 Current Weather by city
 GET https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API_KEY}
+
 Current Weather by coordinates
 GET https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API_KEY}
+
 Geocoding autocomplete (type‑ahead)
 GET https://api.openweathermap.org/geo/1.0/direct?q={query}&limit={n}&appid={API_KEY}
+
 Why geocoding? Selecting a suggestion gives precise lat/lon, removing ambiguity (e.g., “Paris, FR” vs “Paris, US”).
 
 Design notes
