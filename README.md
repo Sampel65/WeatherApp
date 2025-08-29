@@ -3,7 +3,7 @@ A modern, production‑ready weather app demonstrating MVVM, Coordinator, Depend
 
 Table of contents
 
--Features
+-Features-
 -Architecture
 -Project structure
 -Requirements
