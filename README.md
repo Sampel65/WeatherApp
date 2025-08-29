@@ -3,19 +3,18 @@ A modern, production‑ready weather app demonstrating MVVM, Coordinator, Depend
 
 Table of contents
 
-Features
-Architecture
-Project structure
-Requirements
-Setup and run
-API notes
-Design notes
-Persistence
-Error handling
-App Icon
-Troubleshooting
-Roadmap
-Features
+-Features
+-Architecture
+-Project structure
+-Requirements
+-Setup and run
+-API notes
+-Design notes
+-Persistence
+-Error handling
+-App Icon
+-Troubleshooting
+-Features
 
 Splash → Home → Details flow via Coordinator
 City search with type‑ahead suggestions (OpenWeather Geocoding API)
