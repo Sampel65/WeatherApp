@@ -19,7 +19,7 @@ struct SplashView: View {
 
             VStack(spacing: 16) {
                 Image(systemName: "cloud.sun.fill")
-                    .font(.system(size: 64))
+                    .font(.system(size: 100))
                     .foregroundColor(.white)
                 Text("Weatherly")
                     .font(.largeTitle.bold())
@@ -30,7 +30,7 @@ struct SplashView: View {
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 coordinator.setRoot(.home)
             }
         }

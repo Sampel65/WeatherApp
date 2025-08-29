@@ -11,18 +11,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		60E9CFEF2E608A580060D933 /* Exceptions for "WeatherApp" folder in "WeatherApp" target */ = {
+		6053AA352E60E549006C1BB4 /* Exceptions for "WeatherApp" folder in "WeatherApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Model/Weather.swift,
-				Model/WeatherResponse.swift,
-				Netwrok/AppRoute.swift,
-				Netwrok/HTTPError.swift,
-				Netwrok/Networking.swift,
-				Netwrok/WeatherServiceProtocol.swift,
-				Persistence/FavoriteCityStoreProtocol.swift,
-				viewModel/DetailsViewModel.swift,
-				viewModel/HomeViewModel.swift,
+				Info.plist,
 			);
 			target = 60E9CFB22E6085D20060D933 /* WeatherApp */;
 		};
@@ -32,7 +24,7 @@
 		60E9CFB52E6085D20060D933 /* WeatherApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				60E9CFEF2E608A580060D933 /* Exceptions for "WeatherApp" folder in "WeatherApp" target */,
+				6053AA352E60E549006C1BB4 /* Exceptions for "WeatherApp" folder in "WeatherApp" target */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -276,12 +268,11 @@
 				DEVELOPMENT_TEAM = T6LQU8TP96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +297,11 @@
 				DEVELOPMENT_TEAM = T6LQU8TP96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

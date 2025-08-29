@@ -19,7 +19,4 @@ final class DetailsViewModel: ObservableObject {
         String(format: "%.0f°C", weather.temperature)
     }
 
-    var detailSummary: String {
-        "Feels like KATEX_INLINE_OPENInt(weather.feelsLike))°C • H: KATEX_INLINE_OPENInt(weather.maxTemp))°C L: KATEX_INLINE_OPENInt(weather.minTemp))°C • Humidity: KATEX_INLINE_OPENweather.humidity)%"
-    }
 }

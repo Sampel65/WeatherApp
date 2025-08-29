@@ -25,6 +25,7 @@ enum AppRoute: Hashable {
     }
 
     // Root view switcher
+    @MainActor
     @ViewBuilder
     func rootView() -> some View {
         switch root {
@@ -32,15 +33,16 @@ enum AppRoute: Hashable {
             SplashView()
         case .home:
             HomeView(viewModel: HomeViewModel(
-                weatherService: container.weatherService,
-                favoriteStore: container.favoriteCityStore
+                weatherService: self.container.weatherService,
+                geocodingService: self.container.geocodingService,
+                favoriteStore: self.container.favoriteCityStore
             ))
         case .details(let weather):
             DetailsView(viewModel: DetailsViewModel(weather: weather))
         }
     }
 
-    // Navigation destinations for push navigation
+    @MainActor
     @ViewBuilder
     func destinationView(for route: AppRoute) -> some View {
         switch route {
@@ -48,8 +50,9 @@ enum AppRoute: Hashable {
             DetailsView(viewModel: DetailsViewModel(weather: weather))
         case .home:
             HomeView(viewModel: HomeViewModel(
-                weatherService: container.weatherService,
-                favoriteStore: container.favoriteCityStore
+                weatherService: self.container.weatherService,
+                geocodingService: self.container.geocodingService,
+                favoriteStore: self.container.favoriteCityStore
             ))
         case .splash:
             SplashView()

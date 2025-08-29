@@ -12,6 +12,8 @@ protocol Networking {
     func request<T: Decodable>(_ request: URLRequest) async throws -> T
 }
 
+import Foundation
+
 final class NetworkManager: Networking {
     private let session: URLSession
 
@@ -20,11 +22,22 @@ final class NetworkManager: Networking {
     }
 
     func request<T: Decodable>(_ request: URLRequest) async throws -> T {
+        #if DEBUG
+        print("[HTTP] " + (request.httpMethod ?? "GET") + " " + (request.url?.absoluteString ?? ""))
+        #endif
+
         do {
             let (data, response) = try await session.data(for: request)
             guard let http = response as? HTTPURLResponse else {
                 throw HTTPError.requestFailed(underlying: URLError(.badServerResponse))
             }
+
+            #if DEBUG
+            print("[HTTP] Status " + String(http.statusCode))
+            if let body = data.prettyJSONString {
+                print("[HTTP] Body:\n" + body)
+            }
+            #endif
 
             guard (200..<300).contains(http.statusCode) else {
                 let serverMessage = String(data: data, encoding: .utf8)

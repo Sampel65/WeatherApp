@@ -18,11 +18,16 @@ enum HTTPError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .invalidURL: return "Invalid URL"
-        case .requestFailed(let err): return "Request failed: KATEX_INLINE_OPENerr.localizedDescription)"
-        case .badStatus(let code, let message): return "HTTP KATEX_INLINE_OPENcode): KATEX_INLINE_OPENmessage ?? "Unexpected server response.")"
-        case .decodingFailed(let err): return "Decoding failed: KATEX_INLINE_OPENerr.localizedDescription)"
-        case .noData: return "No data received"
+        case .invalidURL:
+            return "Invalid URL"
+        case .requestFailed(let err):
+            return "Request failed: \(err.localizedDescription)"
+        case .badStatus(let code, let message):
+            return "HTTP \(code): \(message ?? "Unexpected server response.")"
+        case .decodingFailed(let err):
+            return "Decoding failed: \(err.localizedDescription)"
+        case .noData:
+            return "No data received"
         }
     }
 }
