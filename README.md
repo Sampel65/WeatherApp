@@ -1,4 +1,17 @@
+
+<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 26 46" src="https://github.com/user-attachments/assets/283f71cc-0387-4a93-b17a-664685af824f" />
+<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 26 32" src="https://github.com/user-attachments/assets/5ee7597a-c4c3-497d-aa85-287f5936781f" />
+<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 41 50" src="https://github.com/user-attachments/assets/371c02d4-bdd7-4f6f-b3c7-fdadc4f4ab67" />
+<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 41 42" src="https://github.com/user-attachments/assets/8c458597-3fa2-4328-9072-526e48254874" />
+<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 41 32" src="https://github.com/user-attachments/assets/3fb488d1-8e4a-482c-a1c2-934b7443d520" />
+<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 41 25" src="https://github.com/user-attachments/assets/38101185-7209-4b4b-ae80-25b93d303d4b" />
+<img width<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 43 27" src="https://github.com/user-attachments/assets/ad7f9afe-a905-4466-a6f9-b1b6dc8fb0f9" />
+="442" height="939" alt="Screenshot 2025-08-29 at 01 41 18" src="https://github.com/user-attachments/assets/40eb888a-2efd-437b-8bf4-7aaf117962da" />
+<img width="442" height="939" alt="Screenshot 2025-08-29 at 01 44 10" src="https://github.com/user-attachments/assets/dd206652-8f8e-48bd-8132-74893ad0f361" />
+
 Weatherly (iOS · SwiftUI)
+
+
 A modern, production‑ready weather app demonstrating MVVM, Coordinator, Dependency Injection, SOLID design, an async/await network layer, OpenWeather integration, geocoding-based type‑ahead search, and a polished UI with glassmorphism.
 
 Table of contents
@@ -14,6 +27,8 @@ Table of contents
 -Error handling
 -App Icon
 -Troubleshooting
+
+
 -Features
 
 Splash → Home → Details flow via Coordinator
