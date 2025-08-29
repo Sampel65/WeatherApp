@@ -43,38 +43,38 @@ Network logging in DEBUG builds
 
 
 Architecture
+
 MVVM per feature (Home, Details): testable, UI‑agnostic view models
+
 Coordinator (NavigationStack + AppRoute): centralizes navigation
+
 Dependency Injection (AppContainer): wires services and stores
+
 Services: WeatherService, GeocodingService (protocol + implementation)
+
 Core: NetworkManager with typed HTTP errors, DTO→Domain mapping
+
 Persistence: UserDefaults store for up to 3 favorites
+
 SOLID: small protocols, single responsibility, dependency inversion
 
 
 Requirements
+
 Xcode 15 or newer
+
 iOS 16.0+ (NavigationStack, AsyncImage)
+
 Swift 5.9+
+
 OpenWeather API key
+
 Setup and run
 
 Clone the repo and open the project in Xcode.
 
 Add your OpenWeather API key:
 
-Xcode → Target → Info → “Custom iOS Target Properties”
-Add:
-Key: OPENWEATHER_API_KEY
-Type: String
-Value: YOUR_KEY
-Alternatively, use xcconfig:
-
-Create Debug.xcconfig/Release.xcconfig:
-OPENWEATHER_API_KEY = your_key
-Assign the xcconfigs to the target (Project → Info)
-In Info.plist set OPENWEATHER_API_KEY to $(OPENWEATHER_API_KEY)
-Build & Run on iOS 16+ simulator or device.
 API notes
 
 Current Weather by city
